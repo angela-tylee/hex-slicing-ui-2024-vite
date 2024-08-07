@@ -1,4 +1,7 @@
 .store-page {
+  main {
+    margin-block: 96px 80px;
+  }
   .h2 {
     color: #000000;
     padding-inline: 16px;
@@ -8,8 +11,11 @@
     color: #000000;
     font-weight: 400;
   }
-  main {
-    margin-block: 96px 80px;
+  @media (max-width: 655px) {
+    .h3 {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 }
 
@@ -19,11 +25,18 @@
   align-items: center;
   label {
     margin-right: 16px;
+    display: block;
   }
   select {
     width: 304px;
     height: 38px;
     padding-inline: 12px;
+  }
+
+  @media (max-width: 655px) {
+    label {
+      margin-right: 8px;
+    }
   }
 }
 
@@ -70,6 +83,12 @@
     font-size: 19px;
     line-height: 27px;
     padding-block: 16px;
+  }
+  @media (max-width: 655px) {
+    .h3 {
+      font-size: 24px;
+      line-height: 36px;
+    }
   }
 }
 

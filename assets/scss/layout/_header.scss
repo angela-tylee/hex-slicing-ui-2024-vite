@@ -1,5 +1,5 @@
 header {
-  background-color: var(--red);
+  background-color: $primary;
   padding-block: 16px;
   color: #FFFFFF;
 }
@@ -22,9 +22,7 @@ header .logo img {
 
 @media (max-width: 655px) {
   header {
-    /* background-color: var(--red); */
     padding-block: 12px 0;
-    /* color: #FFFFFF; */
   }
 
   header .logo {

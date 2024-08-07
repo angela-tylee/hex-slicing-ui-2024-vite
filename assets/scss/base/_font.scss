@@ -1,9 +1,12 @@
+body {
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+}
 
 h1,
 .h1 {
   font-size: 64px;
   line-height: 96px;
-  color: var(--dark-red);
+  color: $dark-red;
   font-weight: 700;
 }
 
@@ -11,7 +14,7 @@ h2,
 .h2 {
   font-size: 48px;
   line-height: 72px;
-  color: var(--dark-red);
+  color: $dark-red;
   font-weight: 700;
 }
 
@@ -19,10 +22,9 @@ h3,
 .h3 {
   font-size: 24px;
   line-height: 36px;
-  color: var(--dark-red);
+  color: $dark-red;
   font-weight: 700;
 }
-
 
 .p1 {
   font-size: 20px;
@@ -32,4 +34,28 @@ h3,
 .p2 {
   font-size: 16px;
   line-height: 24px;
+}
+
+@media (max-width: 887px) {
+  .p1 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 655px) {
+
+  h1,
+  .h1 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+  
+  h2,
+  .h2 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+  }
 }
